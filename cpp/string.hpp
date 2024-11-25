@@ -49,5 +49,11 @@ class mstring{
 	bool operator==(const mstring& s){
 		return (strcmp(str,s.str)==0);
 	}
+	char at(int in){
+		if(in<0||in>=len){
+			return '\1';
+		}
+		return str[in];
+	}
 };
 #endif //MSTRING_H
