@@ -1,9 +1,10 @@
 #ifndef LIST_H
 #define LIST_H
+template<typename T>
 class mlist{
     public:
     struct list_node{
-        long long int value;
+        T value;
         list_node *left;
         list_node *right;
     };
